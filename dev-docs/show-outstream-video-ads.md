@@ -144,7 +144,7 @@ pbjs.addAdUnit({
 
 {% endhighlight %}
 
-For more technical information about renderers, see [the pull request originally adding the 'Renderer' type](https://github.com/prebid/Prebid.js/pull/1082) and [the pull request allowing the 'renderer' type in the mediaType](https://github.com/prebid/Prebid.js/pull/5760).
+For more technical information about renderers, see [the pull request originally adding the 'Renderer' type](https://github.com/aclrys/Prebid.js/pull/1082) and [the pull request allowing the 'renderer' type in the mediaType](https://github.com/aclrys/Prebid.js/pull/5760).
 
 ## Step 2: Show ads in the page body
 

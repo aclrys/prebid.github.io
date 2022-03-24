@@ -34,7 +34,7 @@ Being a reviewer means you're in weekly rotation where you keep an eye on pull r
 
 ## Core Technologies
 
-The Prebid website is developed using [GitHub pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/), a static site generator which uses the following technology to create and style HTML pages. See the [main README file](https://github.com/prebid/prebid.github.io/blob/master/README.md) for instructions on how to set this up.
+The Prebid website is developed using [GitHub pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/), a static site generator which uses the following technology to create and style HTML pages. See the [main README file](https://github.com/aclrys/prebid.github.io/blob/master/README.md) for instructions on how to set this up.
 
 **Markdown**: The majority of the content is written in Markdown language. Jekyll transform this into raw HTML.
 

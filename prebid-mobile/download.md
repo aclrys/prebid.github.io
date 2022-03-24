@@ -12,13 +12,13 @@ For both Android and iOS, there are a couple of options for integrating the Preb
 ## Android
 
 + Option 1: Maven org.prebid:prebid-mobile-sdk
-+ Option 2: clone https://github.com/prebid/prebid-mobile-android
++ Option 2: clone https://github.com/aclrys/prebid-mobile-android
 
 Follow the full instructions for [integrating the Android SDK](/prebid-mobile/pbm-api/android/code-integration-android.html).
 
 ## iOS
 
 + Option 1: Cocoapod 'PrebidMobile'
-+ Option 2: https://github.com/prebid/prebid-mobile-ios
++ Option 2: https://github.com/aclrys/prebid-mobile-ios
 
 Follow the full instructions for [integrating the iOS SDK](/prebid-mobile/pbm-api/ios/code-integration-ios.html).

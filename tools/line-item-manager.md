@@ -37,7 +37,7 @@ This tool uses a base (default) configuration as a starting point to create line
 ```
 $ line_item_manager show config
 ```
-You can look at the full config [here](https://github.com/prebid/line-item-manager/blob/master/line_item_manager/conf.d/line_item_manager.yml). To save time and build on the default config, create a new config file of your own using the following command:
+You can look at the full config [here](https://github.com/aclrys/line-item-manager/blob/master/line_item_manager/conf.d/line_item_manager.yml). To save time and build on the default config, create a new config file of your own using the following command:
 ```
 $ line_item_manager show config > my_config.yml
 ```
@@ -169,8 +169,8 @@ All commands can use the `--help` modifier to see various options for the comman
 
 ## Git Repository
 
-[https://github.com/prebid/line-item-manager](https://github.com/prebid/line-item-manager)
+[https://github.com/aclrys/line-item-manager](https://github.com/aclrys/line-item-manager)
 
-Contributing code? Found a bug? If you wish to push changes, please create a [Pull Request](https://github.com/prebid/line-item-manager/pulls) so we can review the change and approve. 
+Contributing code? Found a bug? If you wish to push changes, please create a [Pull Request](https://github.com/aclrys/line-item-manager/pulls) so we can review the change and approve. 
 
-Also, if you have a question or want to notify us about something, please create a github [issue](https://github.com/prebid/line-item-manager/issues).
+Also, if you have a question or want to notify us about something, please create a github [issue](https://github.com/aclrys/line-item-manager/issues).

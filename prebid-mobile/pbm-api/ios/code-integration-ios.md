@@ -11,7 +11,7 @@ sidebarType: 2
 # Code Integration for iOS
 {: .notoc}
 
-Get started with Prebid Mobile by creating a [Prebid Server account]({{site.github.url}}/prebid-mobile/prebid-mobile-pbs.html). Once your account is set up include the Prebid Mobile SDK in your app by either using Cocoapods or by [cloning the repo](https://github.com/prebid/prebid-mobile-ios) and using our included script to build the SDK.
+Get started with Prebid Mobile by creating a [Prebid Server account]({{site.github.url}}/prebid-mobile/prebid-mobile-pbs.html). Once your account is set up include the Prebid Mobile SDK in your app by either using Cocoapods or by [cloning the repo](https://github.com/aclrys/prebid-mobile-ios) and using our included script to build the SDK.
 
 - TOC
  {:toc}
@@ -87,7 +87,7 @@ You can find the schema name in the build PrebidSDK framework inside Info.plist 
 
 ### Build framework from source
 
-Build Prebid Mobile from source code. After [cloning the repo](https://github.com/prebid/prebid-mobile-ios), use Terminal or another command line tool, change to the root directory and run:
+Build Prebid Mobile from source code. After [cloning the repo](https://github.com/aclrys/prebid-mobile-ios), use Terminal or another command line tool, change to the root directory and run:
 
 ```
 ./scripts/buildPrebidMobile.sh

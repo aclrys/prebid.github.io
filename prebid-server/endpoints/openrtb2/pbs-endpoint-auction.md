@@ -51,7 +51,7 @@ This is a sample OpenRTB 2.5 bid request:
 }
 ```
 
-Additional examples can be found in [endpoints/openrtb2/sample-requests/valid-whole](https://github.com/prebid/prebid-server/tree/master/endpoints/openrtb2/sample-requests/valid-whole).
+Additional examples can be found in [endpoints/openrtb2/sample-requests/valid-whole](https://github.com/aclrys/prebid-server/tree/master/endpoints/openrtb2/sample-requests/valid-whole).
 
 ### Sample Response
 
@@ -408,7 +408,7 @@ Prebid Server's core logic will preprocess the request so that each Bidder sees 
 
 3. Prebid Server will use its Cookie to map IDs for each Bidder.
 
-If you're using [Prebid.js](https://github.com/prebid/Prebid.js), this is happening automatically.
+If you're using [Prebid.js](https://github.com/aclrys/Prebid.js), this is happening automatically.
 
 If you're using another client, you can populate the Cookie of the Prebid Server host with User IDs
 for each Bidder by using the `/cookie_sync` endpoint, and calling the URLs that it returns in the response.
@@ -535,7 +535,7 @@ If `bids` is present, Prebid Server will make a _best effort_ to include these e
 - `hb_cache_id_{bidderName}`: On the highest Bid from {bidderName} in each Imp.
 
 Clients _should not assume_ that these keys will exist, just because they were requested, though.
-If they exist, the value will be a UUID which can be used to fetch Bid JSON from [Prebid Cache](https://github.com/prebid/prebid-cache).
+If they exist, the value will be a UUID which can be used to fetch Bid JSON from [Prebid Cache](https://github.com/aclrys/prebid-cache).
 They may not exist if the host company's cache is full, having connection problems, or other issues like that.
 
 If `vastxml` is present, PBS will try to add analogous keys `hb_uuid` and `hb_uuid_{bidderName}`.
@@ -1321,8 +1321,8 @@ This supports publishers who want to sell different impressions to different bid
 This endpoint returns a 400 if the request contains deprecated properties (e.g. `imp.wmin`, `imp.hmax`).
 
 The error message in the response should describe how to "fix" the request to make it legal.
-If the message is unclear, please [log an issue](https://github.com/prebid/prebid-server/issues)
-or [submit a pull request](https://github.com/prebid/prebid-server/pulls) to improve it.
+If the message is unclear, please [log an issue](https://github.com/aclrys/prebid-server/issues)
+or [submit a pull request](https://github.com/aclrys/prebid-server/pulls) to improve it.
 
 #### Determining Bid Security (http/https)
 

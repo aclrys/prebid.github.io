@@ -48,4 +48,4 @@ The Cross-Player Prebid Component is a JavaScript component that you can use to 
 - [API]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/cross-player-api.html)
 - [Configuration]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/cross-player-config.html)
 - [Communication with Player]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/cross-player-communication.html)
-- [Download](https://github.com/prebid/cross-player-prebid-component)
+- [Download](https://github.com/aclrys/cross-player-prebid-component)

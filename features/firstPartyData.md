@@ -261,7 +261,7 @@ pbjs.setConfig({
 The [IAB](https://iab.com) offers standard content and audience taxonomies for categorizing sites and users. Prebid supports defining these values as first party data in `site.content.data` or `user.data` as shown in the examples above.
 
 {: .alert.alert-warning :}
-Segment support is still under development. You can follow the [Prebid.js discussion](https://github.com/prebid/Prebid.js/issues/6057) if you'd like.
+Segment support is still under development. You can follow the [Prebid.js discussion](https://github.com/aclrys/Prebid.js/issues/6057) if you'd like.
 
 ```
         user: {

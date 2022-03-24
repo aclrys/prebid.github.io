@@ -10,10 +10,10 @@ title: Prebid Server | Developers | Building a Bid Adapter (Go)
 
 Thank you for contributing a bid adapter to the open source Prebid Server project. Each new adapter gives publishers more options for monetizing their inventory and strengthens the header bidding community.
 
-This document guides you through the process of developing a new bid adapter for your bidding server. We encourage you to look at [existing bid adapters](https://github.com/prebid/prebid-server/tree/master/adapters) for working examples and practical guidance. You can also ask us questions by [submitting a GitHub issue](https://github.com/prebid/prebid-server/issues/new).
+This document guides you through the process of developing a new bid adapter for your bidding server. We encourage you to look at [existing bid adapters](https://github.com/aclrys/prebid-server/tree/master/adapters) for working examples and practical guidance. You can also ask us questions by [submitting a GitHub issue](https://github.com/aclrys/prebid-server/issues/new).
 
 {: .alert.alert-info :}
-There are two implementations of Prebid Server, [PBS-Go](https://github.com/prebid/prebid-server) and [PBS-Java](https://github.com/prebid/prebid-server-java). We recommend you build new adapters for PBS-Go and allow us to port it to PBS-Java within a couple of months. If you'd like to build both yourself, please also follow these [instructions for building an adapter in PBS-Java](/prebid-server/developers/add-new-bidder-java.html).
+There are two implementations of Prebid Server, [PBS-Go](https://github.com/aclrys/prebid-server) and [PBS-Java](https://github.com/aclrys/prebid-server-java). We recommend you build new adapters for PBS-Go and allow us to port it to PBS-Java within a couple of months. If you'd like to build both yourself, please also follow these [instructions for building an adapter in PBS-Java](/prebid-server/developers/add-new-bidder-java.html).
 
 
 * TOC
@@ -29,9 +29,9 @@ An OpenRTB 2.5 Bid Request contains one or more Impressions, each representing a
 
 ### Choose A Name
 
-You will need to choose a unique name for your bid adapter. Names should be written in lower case and may not contain special characters or emoji. If you already have a Prebid.js bid adapter, we encourage you to use the same name with the same bidder parameters. You may not name your adapter `all`, `context`, `data`, `general`, `prebid`, or `skadn` as those have special meaning in various contexts. Existing bid adapter names are [maintained here](https://github.com/prebid/prebid-server/blob/master/openrtb_ext/bidders.go#L37).
+You will need to choose a unique name for your bid adapter. Names should be written in lower case and may not contain special characters or emoji. If you already have a Prebid.js bid adapter, we encourage you to use the same name with the same bidder parameters. You may not name your adapter `all`, `context`, `data`, `general`, `prebid`, or `skadn` as those have special meaning in various contexts. Existing bid adapter names are [maintained here](https://github.com/aclrys/prebid-server/blob/master/openrtb_ext/bidders.go#L37).
 
-We ask that the first 6 letters of the name you choose be unique among the existing bid adapters. This consideration helps with generating targeting keys for use by some ad exchanges, such as Google Ad Manager. There's no need to manually check, as this constraint is enforced by the [`TestBidderUniquenessGatekeeping`](https://github.com/prebid/prebid-server/blob/master/openrtb_ext/bidders_validate_test.go#L45) test.
+We ask that the first 6 letters of the name you choose be unique among the existing bid adapters. This consideration helps with generating targeting keys for use by some ad exchanges, such as Google Ad Manager. There's no need to manually check, as this constraint is enforced by the [`TestBidderUniquenessGatekeeping`](https://github.com/aclrys/prebid-server/blob/master/openrtb_ext/bidders_validate_test.go#L45) test.
 
 Throughout the rest of this document, substitute `{bidder}` with the name you've chosen.
 
@@ -48,7 +48,7 @@ We are proud to run the Prebid Server project as a transparent and trustworthy h
   - Adapters must annotate the bid response with the proper media type, ideally based on the response from the bidding server.
 
 {: .alert.alert-warning :}
-Failure to follow the rules will lead to delays in approving your adapter. If you'd like to discuss an exception to a rule, please make your request by [submitting a GitHub issue](https://github.com/prebid/prebid-server/issues/new).
+Failure to follow the rules will lead to delays in approving your adapter. If you'd like to discuss an exception to a rule, please make your request by [submitting a GitHub issue](https://github.com/aclrys/prebid-server/issues/new).
 
 ### Support and Maintenance
 
@@ -56,13 +56,13 @@ You are expected to provide support and maintenance for the code you contribute 
 
 Occasionally, we'll introduce changes to the core framework as part of our ongoing maintenance and enhancement of the project. If this causes a compilation error or a performance impact to your adapter, we will update the affected portion of your bid adapter code and provide full unit test coverage of our changes. We will notify you via email if this happens and give you at least one week to review the PR and provide comments. Please understand that we will not wait for your explicit approval for these kinds of changes unless you respond to our email or comment on the PR.
 
-Please be attentive in reading and responding to emails and [GitHub issues](https://github.com/prebid/prebid-server/issues) from publishers, hosts, and Prebid.org project maintainers. If we receive complaints about your bid adapter and you do not respond to our communications, we may disable your adapter by default or remove it from the project entirely.
+Please be attentive in reading and responding to emails and [GitHub issues](https://github.com/aclrys/prebid-server/issues) from publishers, hosts, and Prebid.org project maintainers. If we receive complaints about your bid adapter and you do not respond to our communications, we may disable your adapter by default or remove it from the project entirely.
 
 ## Create Your Adapter
 
 Prebid Server bid adapters consist of several components: bidder info, bidder parameters, adapter code, registration with the core framework, and default configuration values. This document will guide you though each component.
 
-Please refer to [existing bid adapters](https://github.com/prebid/prebid-server/tree/master/adapters) for working examples and practical guidance, but understand that our adapter interfaces and coding style evolve over time. The examples in this document have precedence over differences you may find in an existing bid adapter.
+Please refer to [existing bid adapters](https://github.com/aclrys/prebid-server/tree/master/adapters) for working examples and practical guidance, but understand that our adapter interfaces and coding style evolve over time. The examples in this document have precedence over differences you may find in an existing bid adapter.
 
 Our project is written in the [Go programming language](https://golang.org/). We understand not everyone has prior experience writing Go code. Please try your best and we'll respectfully steer you in the right direction during the review process.
 
@@ -102,7 +102,7 @@ userSync:
 Modify this template for your bid adapter:
 - Change the maintainer email address to a group distribution list on your ad server's domain. A distribution list is preferred over an individual mailbox to allow for robustness, as roles and team members naturally change.
 - Change the `gvlVendorID` from the sample value of `42` to the id of your bidding server as registered with the [GDPR Global Vendor List (GVL)](https://iabeurope.eu/vendor-list-tcf-v2-0/), or remove this line entirely if your bidding server is not registered with IAB Europe.
-- Change the `modifyingVastXmlAllowed` value to `false` if you'd like to opt-out of [video impression tracking](https://github.com/prebid/prebid-server/issues/1015), or remove this line entirely if your adapter doesn't support VAST video ads.
+- Change the `modifyingVastXmlAllowed` value to `false` if you'd like to opt-out of [video impression tracking](https://github.com/aclrys/prebid-server/issues/1015), or remove this line entirely if your adapter doesn't support VAST video ads.
 - Remove the `capabilities` (app/site) and `mediaTypes` (banner/video/audio/native) combinations which your adapter does not support.
 - Follow the [User Sync Configuration](#user-sync-configuration) documentation below to configure the endpoints for your bid adapter, or remove the `userSync` section if not supported.
 
@@ -250,7 +250,7 @@ When choosing your parameter names, please consider aligning with the OpenRTB 2.
 
 Properties in [JSON Schema](https://spacetelescope.github.io/understanding-json-schema/) are case sensitive. If you choose to specify multiple properties differing only by case for compatibility, we ask that you include the word 'preferred' in one of the descriptions to give a hint to third party configuration systems.
 
-In addition to the examples listed below, please refer to [existing bidder parameter files](https://github.com/prebid/prebid-server/tree/master/static/bidder-params) for guidance.
+In addition to the examples listed below, please refer to [existing bidder parameter files](https://github.com/aclrys/prebid-server/tree/master/static/bidder-params) for guidance.
 
 <details markdown="1">
   <summary>Example: No parameters.</summary>
@@ -421,10 +421,10 @@ import (
   "net/http"
 
   "github.com/mxmCherry/openrtb/v15/openrtb2"
-  "github.com/prebid/prebid-server/adapters"
-  "github.com/prebid/prebid-server/config"
-  "github.com/prebid/prebid-server/errortypes"
-  "github.com/prebid/prebid-server/openrtb_ext"
+  "github.com/aclrys/prebid-server/adapters"
+  "github.com/aclrys/prebid-server/config"
+  "github.com/aclrys/prebid-server/errortypes"
+  "github.com/aclrys/prebid-server/openrtb_ext"
 )
 
 type adapter struct {
@@ -699,7 +699,7 @@ There are a several values of a bid that publishers expect to be populated. Some
 | CCPA | OpenRTB | `request.regs.ext.us_privacy` <br/> The publisher is specifying the California Consumer Privacy Act consent string.
 | COPPA | OpenRTB | `request.regs.ext.us_privacy`<br/> The publisher is specifying the Children's Online Privacy Protection flag.
 | Currency | OpenRTB |`request.cur` <br/> The publisher is specifying the desired bid currency. The Prebid Server default is USD.
-| [Debug](https://github.com/prebid/prebid-server/issues/745) | Prebid | `request.ext.prebid.debug` <br/> The publisher is requesting verbose debugging information from Prebid Server.
+| [Debug](https://github.com/aclrys/prebid-server/issues/745) | Prebid | `request.ext.prebid.debug` <br/> The publisher is requesting verbose debugging information from Prebid Server.
 | [Request-Defined currency conversion rates](https://docs.prebid.org/prebid-server/features/pbs-currency.html) | Prebid | `request.ext.prebid.currency` <br/> The publisher decides to prioritize its own custom currency conversion rates over Prebid Server's currency conversion rates. If a currency rate is not found in `request.ext.prebid.currency`, Prebid Server's rates will be used unless `usepbsrates` is set to `false`. If missing, `usepbsrates` defaults to true.
 | [First Party Data (FPD)](https://docs.prebid.org/prebid-server/features/pbs-fpd.html)| Prebid | `request.imp[].ext.context.data.*`, `request.app.ext.data.*`, `request.site.ext.data.*`, `request.user.ext.data.*` <br/> The publisher may provide first party data (e.g. keywords).
 | GDPR | OpenRTB |  `request.regs.ext.gdpr`, `request.user.ext.consent` <br/> The publisher is specifying the European General Data Protection Regulation flag and TCF consent string.
@@ -748,7 +748,7 @@ Please review the entire [OpenRTB 2.5 Bid Response](https://www.iab.com/wp-conte
 | `.Bids[].Bid.Ext` | Optional | Embedded JSON containing Prebid metadata (see below) or custom information.
 
 {: .alert.alert-info :}
-We recommend resolving creative OpenRTB macros in your adapter. Otherwise, AUCTION_PRICE will eventually get resolved by the [Prebid Universal Creative](https://github.com/prebid/prebid-universal-creative), but by then the bid price will be in the ad server currency and quantized by the price granularity.
+We recommend resolving creative OpenRTB macros in your adapter. Otherwise, AUCTION_PRICE will eventually get resolved by the [Prebid Universal Creative](https://github.com/aclrys/prebid-universal-creative), but by then the bid price will be in the ad server currency and quantized by the price granularity.
 
 If you'd like to support [Long Form Video Ad Pods](/dev-docs/modules/adpod.html)s, then you'll need to provide the followings information:
 
@@ -929,9 +929,9 @@ package {bidder}
 import (
   "testing"
 
-  "github.com/prebid/prebid-server/adapters/adapterstest"
-  "github.com/prebid/prebid-server/config"
-  "github.com/prebid/prebid-server/openrtb_ext"
+  "github.com/aclrys/prebid-server/adapters/adapterstest"
+  "github.com/aclrys/prebid-server/config"
+  "github.com/aclrys/prebid-server/openrtb_ext"
 )
 
 func TestJsonSamples(t *testing.T) {
@@ -1049,7 +1049,7 @@ import (
   "encoding/json"
   "testing"
 
-  "github.com/prebid/prebid-server/openrtb_ext"
+  "github.com/aclrys/prebid-server/openrtb_ext"
 )
 
 func TestValidParams(t *testing.T) {
@@ -1145,14 +1145,14 @@ If your bid adapter defines one or more user sync endpoints, you'll need to perf
 
 1. Run a test auction (see the curl example above) and verify in the debug response that the outgoing `request.ext.debug.httpcalls` calls includes the User ID you saved in step 1.
 
-If you are having issues finding the root cause of user sync errors, please [submit a GitHub issue](https://github.com/prebid/prebid-server/issues/new) and we'll provide guidance.
+If you are having issues finding the root cause of user sync errors, please [submit a GitHub issue](https://github.com/aclrys/prebid-server/issues/new) and we'll provide guidance.
 
 ## User Documentation
 
-Human readable documentation for bid adapters is required in the separate [prebid.github.io](https://github.com/prebid/prebid.github.io) repository. We will not merge your bid adapter until you've at least opened a documentation PR and comment with a link to it.
+Human readable documentation for bid adapters is required in the separate [prebid.github.io](https://github.com/aclrys/prebid.github.io) repository. We will not merge your bid adapter until you've at least opened a documentation PR and comment with a link to it.
 
-1. If you already have a Prebid.js bid adapter, update your existing bidder file in https://github.com/prebid/prebid.github.io/tree/master/dev-docs/modules to add the `pbs: true` variable in the header section. If your Prebid Server bidding parameters are different from your Prebid.js parameters, please include the differences in this document for publishers to be aware.
-1. If you don't have a Prebid.js bid adapter, create a new file in https://github.com/prebid/prebid.github.io/tree/master/dev-docs/modules using this template:
+1. If you already have a Prebid.js bid adapter, update your existing bidder file in https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/modules to add the `pbs: true` variable in the header section. If your Prebid Server bidding parameters are different from your Prebid.js parameters, please include the differences in this document for publishers to be aware.
+1. If you don't have a Prebid.js bid adapter, create a new file in https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/modules using this template:
 
 ```
 ---
@@ -1228,7 +1228,7 @@ Notes on the metadata fields:
 
 ## Contribute
 
-Thank you for taking the time to develop a Prebid Server bid adapter. When you're ready, [contribute](https://github.com/prebid/prebid-server/blob/master/docs/developers/contributing.md) your new bid adapter by opening a PR to the [PBS-Go GitHub repository](https://github.com/prebid/prebid-server) with the name "New Adapter: {Bidder}".
+Thank you for taking the time to develop a Prebid Server bid adapter. When you're ready, [contribute](https://github.com/aclrys/prebid-server/blob/master/docs/developers/contributing.md) your new bid adapter by opening a PR to the [PBS-Go GitHub repository](https://github.com/aclrys/prebid-server) with the name "New Adapter: {Bidder}".
 
 {: .alert.alert-warning :}
 You don't need to ask permission or open a GitHub issue before submitting an adapter.

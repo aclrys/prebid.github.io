@@ -206,7 +206,7 @@ If a Stored BidRequest includes Imps with their own Stored Request IDs, then the
 ## Alternate backends
 
 Stored Requests do not need to be saved to files. Other backends are supported with different
-[configuration options](https://github.com/prebid/prebid-server-java/blob/master/docs/config.md).
+[configuration options](https://github.com/aclrys/prebid-server-java/blob/master/docs/config.md).
 
 ### Database backend
 
@@ -242,9 +242,9 @@ settings:
 Note: HTTP backend implementation always gives an empty result (with "Not supported" error inside)
 for obtaining the `Account` or `AdUnitConfig` by ID for the legacy [auction](/prebid-server/endpoints/openrtb2/pbs-endpoint-auction.html) endpoint.
 
-Full list of application configuration options can be found [here](https://github.com/prebid/prebid-server-java/blob/master/docs/config-app.md).
+Full list of application configuration options can be found [here](https://github.com/aclrys/prebid-server-java/blob/master/docs/config-app.md).
 
-If you need support for a backend that you don't see, please [contribute it](https://github.com/prebid/prebid-server-java/blob/master/docs/developers/contributing.md).
+If you need support for a backend that you don't see, please [contribute it](https://github.com/aclrys/prebid-server-java/blob/master/docs/developers/contributing.md).
 
 ## Caches and updates
 

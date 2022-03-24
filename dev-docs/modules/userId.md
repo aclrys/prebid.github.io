@@ -2289,7 +2289,7 @@ For example, the adapter code might do something like:
 
 Bidders that want to support the User ID module in Prebid Server, need to update their server-side bid adapter to read the desired OpenRTB 'user.ext.eids.source' object and forward the relevant values to their endpoint.
 
-See the [Prebid.js EIDs javascript source](https://github.com/prebid/Prebid.js/blob/master/modules/userId/eids.js) for the definitive list of user EID sources.
+See the [Prebid.js EIDs javascript source](https://github.com/aclrys/Prebid.js/blob/master/modules/userId/eids.js) for the definitive list of user EID sources.
 
 ### Exporting User IDs
 
@@ -2299,7 +2299,7 @@ If you need to export the user IDs stored by Prebid User ID module, the `getUser
 pbjs.getUserIds() // returns object like bidRequest.userId. e.g. {"pubcid":"1111", "tdid":"2222"}
 ```
 
-You can use [`getUserIdsAsEids()`](/dev-docs/publisher-api-reference/getUserIdsAsEids.html) to get the user IDs stored by Prebid User ID module in ORTB Eids format. Refer [eids.md](https://github.com/prebid/Prebid.js/blob/master/modules/userId/eids.md) for output format.
+You can use [`getUserIdsAsEids()`](/dev-docs/publisher-api-reference/getUserIdsAsEids.html) to get the user IDs stored by Prebid User ID module in ORTB Eids format. Refer [eids.md](https://github.com/aclrys/Prebid.js/blob/master/modules/userId/eids.md) for output format.
 ```
 pbjs.getUserIdsAsEids() // returns userIds in ORTB Eids format. e.g.
 [
@@ -2340,17 +2340,17 @@ pbjs.getUserIdsAsEids() // returns userIds in ORTB Eids format. e.g.
 
 If you're an ID provider that wants to get on this page:
 
-- Fork Prebid.js and write a sub-module similar to one of the *IdSystem modules already in the [modules](https://github.com/prebid/Prebid.js/tree/master/modules) folder.
+- Fork Prebid.js and write a sub-module similar to one of the *IdSystem modules already in the [modules](https://github.com/aclrys/Prebid.js/tree/master/modules) folder.
 - Add your *IdSystem name into the modules/.submodules.json file
-- Follow all the guidelines in the [contribution page](https://github.com/prebid/Prebid.js/blob/master/CONTRIBUTING.md).
-- Submit a Pull Request against the [Prebid.js repository](https://github.com/prebid/Prebid.js).
-- Fork the prebid.org [documentation repository](https://github.com/prebid/prebid.github.io), modify /dev-docs/modules/userId.md, /download.md, and submit a documentation Pull Request.
+- Follow all the guidelines in the [contribution page](https://github.com/aclrys/Prebid.js/blob/master/CONTRIBUTING.md).
+- Submit a Pull Request against the [Prebid.js repository](https://github.com/aclrys/Prebid.js).
+- Fork the prebid.org [documentation repository](https://github.com/aclrys/prebid.github.io), modify /dev-docs/modules/userId.md, /download.md, and submit a documentation Pull Request.
 
 <a name="getUserIds"></a>
 
 ## Passing UserIds to Google Ad Manager for targeting
 
-User IDs from Prebid User ID module can be passed to GAM for targeting in Google Ad Manager or could be passed ahead to Google Open Bidding using ```userIdTargeting``` module. Note Google deprecated the ability to pass key values, including identifiers, to OB partners and then later began a closed beta to resume it with details non-public (see  https://developers.google.com/authorized-buyers/rtb/request-guide ). More details on the user id module can be found [here](https://github.com/prebid/Prebid.js/blob/master/modules/userIdTargeting.md). In short, you just need to add the optional userIdTargeting sub-module into your `gulp build` command and the additional `userIdTargeting` config becomes available.
+User IDs from Prebid User ID module can be passed to GAM for targeting in Google Ad Manager or could be passed ahead to Google Open Bidding using ```userIdTargeting``` module. Note Google deprecated the ability to pass key values, including identifiers, to OB partners and then later began a closed beta to resume it with details non-public (see  https://developers.google.com/authorized-buyers/rtb/request-guide ). More details on the user id module can be found [here](https://github.com/aclrys/Prebid.js/blob/master/modules/userIdTargeting.md). In short, you just need to add the optional userIdTargeting sub-module into your `gulp build` command and the additional `userIdTargeting` config becomes available.
 
 ## Further Reading
 

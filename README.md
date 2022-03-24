@@ -88,7 +88,7 @@ Open the `Server address` URL in your browser, and you should see a locally runn
 
 Please don't submit PRs to the Prebid.org downloads page. That page gets updated in tandem with the Prebid.js release process.
 
-The Downloads page is generated from [the Markdown bidder adapter docs](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders), so the process for updating is:
+The Downloads page is generated from [the Markdown bidder adapter docs](https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/bidders), so the process for updating is:
 
 1. Your adapter code is merged into Prebid.js
 2. Your bidder docs PR is submitted over here to the docs site

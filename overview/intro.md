@@ -88,7 +88,7 @@ connections.
 
 Several Prebid.org members provide [hosted solutions](https://prebid.org/product-suite/managed-services/), enabling publishers to receive the benefits of server-side header bidding without the need to implement and manage the process themselves.
 
-If a publisher would prefer to implement their own solution, source code in [Go](https://github.com/prebid/prebid-server) or [Java](https://github.com/prebid/prebid-server-java) is available from our Github page and detailed instructions for configuring, deploying and testing your implementation can be found in the [Prebid Server section](/prebid-server/overview/prebid-server-overview.html) of this site.  
+If a publisher would prefer to implement their own solution, source code in [Go](https://github.com/aclrys/prebid-server) or [Java](https://github.com/aclrys/prebid-server-java) is available from our Github page and detailed instructions for configuring, deploying and testing your implementation can be found in the [Prebid Server section](/prebid-server/overview/prebid-server-overview.html) of this site.  
 
 **Prebid Server process**
 

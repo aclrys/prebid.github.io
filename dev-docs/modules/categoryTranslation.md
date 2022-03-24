@@ -55,7 +55,7 @@ Publishers should ensure that the JSON returned from their custom file is valid 
 }
 ```
 
-Refer to Prebid Github repository for a [custom file reference](https://github.com/prebid/category-mapping-file).
+Refer to Prebid Github repository for a [custom file reference](https://github.com/aclrys/category-mapping-file).
 
 
 ## Further Reading

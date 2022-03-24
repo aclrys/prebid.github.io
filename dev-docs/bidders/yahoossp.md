@@ -48,7 +48,7 @@ floors_supported: true and legacy "oneVideo" partners/publishers migrating to th
 | placementId | Optional | Ability to target a specific Placement using an External ID provided by Yahoo SSP | 'header' | string |
 
 ### Prebid.js Adapter Supported Features
-For further setup details & examples please see https://github.com/prebid/Prebid.js/blob/master/modules/yahoosspBidAdapter.md
+For further setup details & examples please see https://github.com/aclrys/Prebid.js/blob/master/modules/yahoosspBidAdapter.md
 * Media Types: Banner & Video
 * Outstream renderer
 * Multi-format adUnits

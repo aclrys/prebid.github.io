@@ -9,9 +9,9 @@ title: Prebid Server | Endpoints | Events
 
 Prebid Server supports events as described in these GitHub issues:
 
-- [Prebid Server Event Notification proposal](https://github.com/prebid/prebid-server/issues/800)
-- [Prebid Server Event Updates](https://github.com/prebid/prebid-server/issues/1202)
-- [PBS video impression tracking](https://github.com/prebid/prebid-server/issues/1015)
+- [Prebid Server Event Notification proposal](https://github.com/aclrys/prebid-server/issues/800)
+- [Prebid Server Event Updates](https://github.com/aclrys/prebid-server/issues/1202)
+- [PBS video impression tracking](https://github.com/aclrys/prebid-server/issues/1015)
 
 ## GET /event
 

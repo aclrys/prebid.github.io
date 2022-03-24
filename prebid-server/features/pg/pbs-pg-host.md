@@ -32,10 +32,10 @@ no obligation to support other PG Bidders, but your publishers may request it.
 For now, the only information about building and running the servers is in
 the relevant GitHub repos:
 
-- [Prebid Server Java](https://github.com/prebid/prebid-server-java). Note that Prebid Server Go doesn't currently support Programmatic Guaranteed.
-- [General Planner](https://github.com/prebid/pg-general-planner)
-- [Delivery Stats Service](https://github.com/prebid/pg-del-stats)
-- [Dimension Value API](https://github.com/prebid/pg-dim-val-api)
+- [Prebid Server Java](https://github.com/aclrys/prebid-server-java). Note that Prebid Server Go doesn't currently support Programmatic Guaranteed.
+- [General Planner](https://github.com/aclrys/pg-general-planner)
+- [Delivery Stats Service](https://github.com/aclrys/pg-del-stats)
+- [Dimension Value API](https://github.com/aclrys/pg-dim-val-api)
 
 Prebid does not offer specific guidance about fault-tolerant architectures.
 It's left up to each Host Company to determine what will happen if one of the servers goes down. i.e. Will there be load-balancing, automatic failover, a warm stand-by, or no fault tolerance?

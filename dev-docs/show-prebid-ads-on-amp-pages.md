@@ -16,7 +16,7 @@ For more information about AMP RTC, see:
 
 + [Prebid Server and AMP](/prebid-server/use-cases/pbs-amp.html)
 + [Prebid Server AMP Endpoint Technical Documentation](/prebid-server/endpoints/openrtb2/pbs-endpoint-amp.html)
-+ [Prebid Server Stored Bid Requests](https://github.com/prebid/prebid-server/blob/master/docs/developers/stored-requests.md#stored-bidrequests)
++ [Prebid Server Stored Bid Requests](https://github.com/aclrys/prebid-server/blob/master/docs/developers/stored-requests.md#stored-bidrequests)
 + [AMP RTC Overview](https://github.com/ampproject/amphtml/blob/master/extensions/amp-a4a/rtc-documentation.md)
 + [AMP RTC Publisher Integration Guide](https://github.com/ampproject/amphtml/blob/master/extensions/amp-a4a/rtc-publisher-implementation-guide.md)
 
@@ -164,7 +164,7 @@ For other hosts, you can specify the URL directly rather than using one of the c
 This is the creative that your Ad Ops team needs to upload to the ad server (it's also documented at [Setting up Prebid for AMP in Google Ad Manager]({{site.github.url}}/adops/setting-up-prebid-for-amp-in-dfp.html)).
 
 {% capture tipNote %}
-You can always get the latest version of the creative code below from [the AMP example creative file in our GitHub repo](https://github.com/prebid/prebid-universal-creative/blob/master/template/amp/dfp-creative.html).
+You can always get the latest version of the creative code below from [the AMP example creative file in our GitHub repo](https://github.com/aclrys/prebid-universal-creative/blob/master/template/amp/dfp-creative.html).
 {% endcapture %}
 
 {% include alerts/alert_tip.html content=tipNote %}

@@ -58,7 +58,7 @@ POST https://prebid-server.example.com/cookie_sync
 
 Cookie sync for AMP works in a way quite similar to Prebid.js.
 
-1) The Prebid Server hosting company places a modified version of the `load-cookie` script onto a CDN. This script is part of the [Prebid Universal Creative](https://github.com/prebid/prebid-universal-creative/blob/master/src/cookieSync.js) repo.
+1) The Prebid Server hosting company places a modified version of the `load-cookie` script onto a CDN. This script is part of the [Prebid Universal Creative](https://github.com/aclrys/prebid-universal-creative/blob/master/src/cookieSync.js) repo.
 
 {: .alert.alert-warning :}
 The only two values currently valid for 'endpoint' are 'appnexus' and 'rubicon' -- other host companies should update their copy to include their endpoint.

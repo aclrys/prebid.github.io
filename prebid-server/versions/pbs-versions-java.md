@@ -34,8 +34,8 @@ We recommend you review the [feature comparison list](/prebid-server/features/pb
 The repositories are currently in the Rubicon-Project GitHub organization, but
 will soon move to the Prebid org.
 
-- [Prebid Server - Java](https://github.com/prebid/prebid-server-java)
-- [Prebid Cache Server - Java](https://github.com/prebid/prebid-cache-java)
+- [Prebid Server - Java](https://github.com/aclrys/prebid-server-java)
+- [Prebid Cache Server - Java](https://github.com/aclrys/prebid-cache-java)
 
 ## Installation
 

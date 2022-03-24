@@ -13,16 +13,16 @@ This page has links to release notes for each of the projects associated with Pr
 
 ## Prebid.js
 
-+ [Release notes on GitHub](https://github.com/prebid/Prebid.js/releases)
++ [Release notes on GitHub](https://github.com/aclrys/Prebid.js/releases)
 
 ## Prebid Server
 
-+ [Release notes on GitHub](https://github.com/prebid/prebid-server/releases)
++ [Release notes on GitHub](https://github.com/aclrys/prebid-server/releases)
 
 ## Prebid Mobile
 
-+ [iOS release notes on GitHub](https://github.com/prebid/prebid-mobile-ios/releases)
-+ [Android release notes on GitHub](https://github.com/prebid/prebid-mobile-android/releases)
++ [iOS release notes on GitHub](https://github.com/aclrys/prebid-mobile-ios/releases)
++ [Android release notes on GitHub](https://github.com/aclrys/prebid-mobile-android/releases)
 
 ## Related Reading
 

@@ -72,7 +72,7 @@ order), the creative and targeting will be different from the example shown here
 {% endhighlight %}
 
 {: .alert.alert-success :}
-You can always get the latest version of the creative code from [the AMP example creative file in our GitHub repo](https://github.com/prebid/prebid-universal-creative/blob/master/template/amp/dfp-creative.html).
+You can always get the latest version of the creative code from [the AMP example creative file in our GitHub repo](https://github.com/aclrys/prebid-universal-creative/blob/master/template/amp/dfp-creative.html).
 
 {% include adops/adops-creative-declaration.html %}
 

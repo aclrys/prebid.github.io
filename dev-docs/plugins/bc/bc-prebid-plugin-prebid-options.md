@@ -189,7 +189,7 @@ For example:
 
 A Brightcove Prebid Plugin : Bidder Settings JSON Converter tool has been created that you can use to convert bidder settings as they would be defined on the page into the format acceptable in Brightcove Studio. You can access this tool in one of the following ways:
 
-- directly in the GitHub repository for the plugin: [https://github.com/prebid/prebid-js-plugin-brightcove/blob/master/tools/biddersettings.html](https://github.com/prebid/prebid-js-plugin-brightcove/blob/master/tools/biddersettings.html)
+- directly in the GitHub repository for the plugin: [https://github.com/aclrys/prebid-js-plugin-brightcove/blob/master/tools/biddersettings.html](https://github.com/aclrys/prebid-js-plugin-brightcove/blob/master/tools/biddersettings.html)
 - directly using this external link: [https://video-demo.appnexus.com/encino/bcplugin/prebid/tools/biddersettings.html](https://video-demo.appnexus.com/encino/bcplugin/prebid/tools/biddersettings.html)
 
 See "bidderSettings" at [Prebid.org]({{site.baseurl}}/dev-docs/publisher-api-reference.html) for details.

@@ -412,4 +412,4 @@ Prebid only supports the most recent major version. Within a month or so after a
 ### Option 2: Build from Source Code (More Advanced)
 
 {: .lead :}
-Alternatively, you can build Prebid.js from the source code. For instructions, see the [Prebid.js README on GitHub](https://github.com/prebid/Prebid.js/blob/master/README.md).
+Alternatively, you can build Prebid.js from the source code. For instructions, see the [Prebid.js README on GitHub](https://github.com/aclrys/Prebid.js/blob/master/README.md).

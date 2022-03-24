@@ -22,7 +22,7 @@ You will want to be familiar with the following background information:
 
 ### Coding standards
 
-The module’s code style should correspond to the [PBS-Java project code style](https://github.com/prebid/prebid-server-java/blob/master/docs/code-style.md).
+The module’s code style should correspond to the [PBS-Java project code style](https://github.com/aclrys/prebid-server-java/blob/master/docs/code-style.md).
 
 ## Module Directory Layout
 
@@ -95,13 +95,13 @@ The structure of your module source code inside the modules directory must have 
 ## Module Code
 
 The quick start is to take a look in two places:
-- the [ortb2-blocking module](https://github.com/prebid/prebid-server-java/tree/master/extra/modules/ortb2-blocking)
-- the [module test cases](https://github.com/prebid/prebid-server-java/tree/master/src/test/java/org/prebid/server/it/hooks)
+- the [ortb2-blocking module](https://github.com/aclrys/prebid-server-java/tree/master/extra/modules/ortb2-blocking)
+- the [module test cases](https://github.com/aclrys/prebid-server-java/tree/master/src/test/java/org/prebid/server/it/hooks)
 
 ### Adding module documentation
 It is required to add a "README.md" file to the root of your module folder. Recommended this file contains the description of what the implemented module does, links to external documentation and includes maintainer contact info (email, slack, etc).
 
-The documentation must also live on the docs.prebid.org site. Please add a markdown file to https://github.com/prebid/prebid.github.io/tree/master/prebid-server/pbs-modules
+The documentation must also live on the docs.prebid.org site. Please add a markdown file to https://github.com/aclrys/prebid.github.io/tree/master/prebid-server/pbs-modules
 
 ### Hook Interfaces
 
@@ -174,7 +174,7 @@ Future.succeededFuture(
 );
 ```
 
-More test implementations for each hook can be found in unit-tests at https://github.com/prebid/prebid-server-java/tree/master/src/test/java/org/prebid/server/it/hooks folder.
+More test implementations for each hook can be found in unit-tests at https://github.com/aclrys/prebid-server-java/tree/master/src/test/java/org/prebid/server/it/hooks folder.
 
 ### Applying results asynchronously
 

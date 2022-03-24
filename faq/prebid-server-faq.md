@@ -34,8 +34,8 @@ but it's not necessary for contributing code as a community member.
 The original version of Prebid Server was the Go-Lang version. Rubicon Project
 ported it to Java because they had more Java talent than Go.
 
-+ [Prebid Server - Go](https://github.com/prebid/prebid-server)
-+ [Prebid Server - Java](https://github.com/prebid/prebid-server-java)
++ [Prebid Server - Go](https://github.com/aclrys/prebid-server)
++ [Prebid Server - Java](https://github.com/aclrys/prebid-server-java)
 
 Both versions are live in production, and they are kept identical in external APIs
 and reasonably close in functionality. See the [Prebid Server feature list](/prebid-server/features/pbs-feature-idx.html) for the list of differences.
@@ -167,7 +167,7 @@ Another way is to [register for our host company mailing list](/prebid-server/ho
 
 Prebid Server is not a full-fledged SSP. Any DSP bid adapters should keep this in mind when it comes to assuming SSP functionality like resolving OpenRTB macros. We debated building this functionality into PBS, but realized it would take precious milliseconds away from the overall header bidding auction to scan kilobytes of bidder creatives for the 9 different OpenRTB macros. Since so few bidders require this functionality, it makes sense to have those adapters do it themselves.
 
-If an adapter doesn't resolve its own macros, AUCTION_PRICE will eventually get resolved by the [Prebid Universal Creative](https://github.com/prebid/prebid-universal-creative), but by then the bid price will be in the ad server currency and quantized by the price granularity. This will likely cause reporting discrepancies.
+If an adapter doesn't resolve its own macros, AUCTION_PRICE will eventually get resolved by the [Prebid Universal Creative](https://github.com/aclrys/prebid-universal-creative), but by then the bid price will be in the ad server currency and quantized by the price granularity. This will likely cause reporting discrepancies.
 
 ## Does Prebid Server support region-specific endpoints for bidders?
 

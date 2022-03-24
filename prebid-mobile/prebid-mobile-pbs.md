@@ -31,7 +31,7 @@ Before you begin using Prebid Mobile in your apps, you need to prepare your end-
 
 ### Implement Your Own Prebid Server Host
 
-Prebid Server is an open source project. This allows you to host your own implementation of Prebid Server, though it's not as easy as downloading Prebid.js, because it needs to be hosted. The source code is available for [Prebid-Server GoLang](https://github.com/prebid/prebid-server) and [Prebid Server-Java](https://github.com/prebid/prebid-server-java).
+Prebid Server is an open source project. This allows you to host your own implementation of Prebid Server, though it's not as easy as downloading Prebid.js, because it needs to be hosted. The source code is available for [Prebid-Server GoLang](https://github.com/aclrys/prebid-server) and [Prebid Server-Java](https://github.com/aclrys/prebid-server-java).
 
 See the [Prebid Server documentation](/prebid-server/overview/prebid-server-overview.html) for more information on [setting up your own server host](/prebid-server/hosting/pbs-hosting.html).
 
@@ -69,8 +69,8 @@ having to change the app.
 ## Developers - Using the SDK
 
 To begin using Prebid Mobile, download the Prebid Mobile SDK:
--   [SDK for iOS](https://github.com/prebid/prebid-mobile-ios)
--   [SDK for Android](https://github.com/prebid/prebid-mobile-android)
+-   [SDK for iOS](https://github.com/aclrys/prebid-mobile-ios)
+-   [SDK for Android](https://github.com/aclrys/prebid-mobile-android)
 
 After you have the SDK installed, register ad units with the Prebid Mobile framework.
 -   [iOS Code Integration]({{site.github.url}}/prebid-mobile/pbm-api/ios/code-integration-ios.html)

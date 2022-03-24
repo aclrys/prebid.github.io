@@ -39,11 +39,11 @@ For instructions on integrating an analytics provider, see the next section.
 
 Working with any Prebid project requires using Github. In general, we recommend the same basic workflow for any project:
 
-1. Fork the appropriate Prebid repository (e.g. [Prebid.js](https://github.com/prebid/Prebid.js)).
+1. Fork the appropriate Prebid repository (e.g. [Prebid.js](https://github.com/aclrys/Prebid.js)).
 2. Create a branch in your fork for your proposed code change. (e.g. feature/exAnalyticsAdapter)
 3. Build and test your feature/bug fix in the branch.
 4. Open a [pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) to the appropriate repository's master branch with a good description of the feature/bug fix.
-5. If there's something that needs to change on the prebid.org website, follow the above steps for the [website repo](https://github.com/prebid/prebid.github.io).
+5. If there's something that needs to change on the prebid.org website, follow the above steps for the [website repo](https://github.com/aclrys/prebid.github.io).
 
 {: .alert.alert-warning :}
 Analytics adapters are subject to a number of specific technical rules. Please become familiar
@@ -71,9 +71,9 @@ Analytics adapter for Example.com. Contact prebid@example.com for information.
 
 1. Create a JS file under `modules` with the name of the bidder suffixed with 'AnalyticsAdapter', e.g., `exAnalyticsAdapter.js`
 
-2. Create an analytics adapter to listen for [Prebid events](/dev-docs/publisher-api-reference/onEvent.html) and call the analytics library or server. See the existing *AnalyticsAdapter.js files in the repo under [modules](https://github.com/prebid/Prebid.js/tree/master/modules).
+2. Create an analytics adapter to listen for [Prebid events](/dev-docs/publisher-api-reference/onEvent.html) and call the analytics library or server. See the existing *AnalyticsAdapter.js files in the repo under [modules](https://github.com/aclrys/Prebid.js/tree/master/modules).
 
-3. There are two types of analytics adapters. The example here focuses on the 'endpoint' type. See [AnalyticsAdapter.js](https://github.com/prebid/Prebid.js/blob/master/src/AnalyticsAdapter.js) for more info on the 'bundle' type.
+3. There are two types of analytics adapters. The example here focuses on the 'endpoint' type. See [AnalyticsAdapter.js](https://github.com/aclrys/Prebid.js/blob/master/src/AnalyticsAdapter.js) for more info on the 'bundle' type.
 
     * endpoint - Calls the specified URL on analytics events. Doesn't require a global context.
     * bundle - An advanced option expecting a global context.
@@ -86,7 +86,7 @@ the base class function to set up the events.
 
 #### Basic prototype analytics adapter
 
-The best way to get started is to look at some of the existing AnalyticsAdapter.js files in [the repository](https://github.com/prebid/Prebid.js/tree/master/modules).
+The best way to get started is to look at some of the existing AnalyticsAdapter.js files in [the repository](https://github.com/aclrys/Prebid.js/tree/master/modules).
 
 Here's a skeleton outline:
 
@@ -155,13 +155,13 @@ There are two error events analytics modules may wish to listen for: auctionDebu
 
 ### Step 4: Submit the code
 
-Once everything looks good, submit the code, tests, and markdown as a pull request to the [Prebid.js repo](https://github.com/prebid/Prebid.js).
+Once everything looks good, submit the code, tests, and markdown as a pull request to the [Prebid.js repo](https://github.com/aclrys/Prebid.js).
 
 ### Step 5: Website pull request
 
 Add a documentation file for your new analytics adapter.
 
-1. Create a fork of the [website repo](https://github.com/prebid/prebid.github.io) and a branch for your new adapter. (e.g. feature/exampleAnalyticsAdapter)
+1. Create a fork of the [website repo](https://github.com/aclrys/prebid.github.io) and a branch for your new adapter. (e.g. feature/exampleAnalyticsAdapter)
 
 2. Copy one of the '.md' files in `dev-docs/analytics` to a file for your adapter. e.g. example.md
 

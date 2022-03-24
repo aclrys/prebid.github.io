@@ -198,8 +198,8 @@ then the data for those Stored Imps not be resolved.
 
 ## Alternate backends
 
-Stored Requests do not need to be saved to files. [Other backends](https://github.com/prebid/prebid-server/tree/master/stored_requests/backends) are supported
-with different [configuration options](https://github.com/prebid/prebid-server/blob/master/docs/developers/configuration.md). For example:
+Stored Requests do not need to be saved to files. [Other backends](https://github.com/aclrys/prebid-server/tree/master/stored_requests/backends) are supported
+with different [configuration options](https://github.com/aclrys/prebid-server/blob/master/docs/developers/configuration.md). For example:
 
 ```yaml
 stored_requests:
@@ -219,7 +219,7 @@ stored_requests:
 
 ```
 
-If you need support for a backend that you don't see, please [contribute it](https://github.com/prebid/prebid-server/blob/master/docs/developers/contributing.md).
+If you need support for a backend that you don't see, please [contribute it](https://github.com/aclrys/prebid-server/blob/master/docs/developers/contributing.md).
 
 ## Caches and Event-based updating
 

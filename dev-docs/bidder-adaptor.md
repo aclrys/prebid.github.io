@@ -17,7 +17,7 @@ At a high level, a bidder adapter is responsible for:
 1. Creating the bid requests for the bidder's server.
 2. Parsing and registering the bid responses.
 
-This page has instructions for writing your own bidder adapter.  The instructions here try to walk you through some of the code you'll need to write for your adapter.  When in doubt, use [the working adapters in the GitHub repo](https://github.com/prebid/Prebid.js/tree/master/modules) for reference.
+This page has instructions for writing your own bidder adapter.  The instructions here try to walk you through some of the code you'll need to write for your adapter.  When in doubt, use [the working adapters in the GitHub repo](https://github.com/aclrys/Prebid.js/tree/master/modules) for reference.
 
 * TOC
 {:toc}
@@ -34,14 +34,14 @@ This page has instructions for writing your own bidder adapter.  The instruction
 
 In order to provide a fast and safe header bidding environment for publishers, the Prebid.org team reviews all adapters for the required bid adapter conventions laid out in the [Module Rules](/dev-docs/module-rules.html). Here are additional details specific to Prebid.js:
 
-* **No loading of external code**: All code must be present in the adapter, not loaded at runtime. Exceptions are possible -- see [the full policy](https://github.com/prebid/prebid-js-external-js-template#policy).
+* **No loading of external code**: All code must be present in the adapter, not loaded at runtime. Exceptions are possible -- see [the full policy](https://github.com/aclrys/prebid-js-external-js-template#policy).
 * **All user-sync activity must be registered via the provided functions**: The platform will place all registered syncs in the page after the auction is complete, subject to publisher configuration.
 * **Adapters may not create or trigger any network requests or pixels** outside of the requests the wrapper creates on behalf of the adapter (from the return values of `buildRequests()` and `getUserSyncs()`) or that are included in a winning and rendered creative.
 * **Adapters may not modify ad slots directly**: For example, accessing `googletag.pubads().getSlots()` to modify or set targeting directly on slots is not permitted.
 * **All parameter conventions must be followed**: Video params must be read from AdUnit.mediaTypes.video when available; however, bidder config can override the ad unit.
 
 {: .alert.alert-danger :}
-The above list is **not** the full list of requirements. Failure to follow any of the required conventions defined in the [Module Rules](/dev-docs/module-rules.html) could lead to delays in approving your adapter for inclusion in Prebid.js. If you'd like to apply for an exception to one of the rules, make your request in a new [Prebid.js issue](https://github.com/prebid/Prebid.js/issues).
+The above list is **not** the full list of requirements. Failure to follow any of the required conventions defined in the [Module Rules](/dev-docs/module-rules.html) could lead to delays in approving your adapter for inclusion in Prebid.js. If you'd like to apply for an exception to one of the rules, make your request in a new [Prebid.js issue](https://github.com/aclrys/Prebid.js/issues).
 
 <a name="bidder-adaptor-Required-Files" />
 
@@ -458,7 +458,7 @@ All user ID sync activity should be done using the `getUserSyncs` callback of th
 
 Given an array of all the responses from the server, `getUserSyncs` is used to determine which user syncs should occur. The order of syncs in the `serverResponses` array matters. The most important ones should come first, since publishers may limit how many are dropped on their page.
 
-See below for an example implementation.  For more examples, search for `getUserSyncs` in the [modules directory in the repo](https://github.com/prebid/Prebid.js/tree/master/modules).
+See below for an example implementation.  For more examples, search for `getUserSyncs` in the [modules directory in the repo](https://github.com/aclrys/Prebid.js/tree/master/modules).
 
 {% highlight js %}
 
@@ -809,7 +809,7 @@ Adapter must add following new properties to bid response
 {% endhighlight %}
 
 
-Appnexus Adapter uses above explained approach. You can refer [here](https://github.com/prebid/Prebid.js/blob/master/modules/appnexusBidAdapter.js)
+Appnexus Adapter uses above explained approach. You can refer [here](https://github.com/aclrys/Prebid.js/blob/master/modules/appnexusBidAdapter.js)
 
 Adapter must return one [IAB accepted subcategories](https://iabtechlab.com/wp-content/uploads/2017/11/IAB_Tech_Lab_Content_Taxonomy_V2_Final_2017-11.xlsx) (links to MS Excel file) if they want to support competitive separation. These IAB sub categories will be converted to Ad server industry/group. If adapter is returning their own proprietary categroy, it is the responsibility of the adapter to convert their categories into [IAB accepted subcategories](https://iabtechlab.com/wp-content/uploads/2017/11/IAB_Tech_Lab_Content_Taxonomy_V2_Final_2017-11.xlsx) (links to MS Excel file).
 
@@ -965,9 +965,9 @@ If `image` is a string, `hb_native_image` will be populated with that string (a 
 
 ## Adding Unit Tests
 
-Every adapter submission must include unit tests.  For details about adapter testing requirements, see the **Writing Tests** section of [CONTRIBUTING.md](https://github.com/prebid/Prebid.js/blob/master/CONTRIBUTING.md).
+Every adapter submission must include unit tests.  For details about adapter testing requirements, see the **Writing Tests** section of [CONTRIBUTING.md](https://github.com/aclrys/Prebid.js/blob/master/CONTRIBUTING.md).
 
-For example tests, see [the existing adapter test suites](https://github.com/prebid/Prebid.js/tree/master/test/spec/modules).
+For example tests, see [the existing adapter test suites](https://github.com/aclrys/Prebid.js/tree/master/test/spec/modules).
 
 <a name="bidder-example"></a>
 
@@ -1120,10 +1120,10 @@ registerBidder(spec);
 
 ## Submitting your adapter
 
-- [Write unit tests](https://github.com/prebid/Prebid.js/blob/master/CONTRIBUTING.md)
-- Create a docs pull request against [prebid.github.io](https://github.com/prebid/prebid.github.io)
+- [Write unit tests](https://github.com/aclrys/Prebid.js/blob/master/CONTRIBUTING.md)
+- Create a docs pull request against [prebid.github.io](https://github.com/aclrys/prebid.github.io)
   - Fork the repo
-  - Copy a file in [dev-docs/bidders](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders) and name it to exactly the same as your biddercode. Add the following metadata to the header of your .md file:
+  - Copy a file in [dev-docs/bidders](https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/bidders) and name it to exactly the same as your biddercode. Add the following metadata to the header of your .md file:
     - Add 'biddercode' and set it to the code that publishers should be using to reference your bidder in an AdUnit. This needs to be the same name as the docs file!
     - Add 'aliasCode' if your biddercode is not the same name as your PBJS implementation file. e.g. if your biddercode is "ex", but the file in the PBJS repo is exampleBidAdapter.js, this value needs to be "example".
     - Add `pbjs: true`. If you also have a [Prebid Server bid adapter](/prebid-server/developers/add-new-bidder-go.html), add `pbs: true`. Default is false for both.
@@ -1185,5 +1185,5 @@ The Prebid.org [download page](/download.html) will automatically be updated wit
 
 ## Further Reading
 
-+ [Prebid.js Repo - Bidder Adapter Sources](https://github.com/prebid/Prebid.js/tree/master/modules)
++ [Prebid.js Repo - Bidder Adapter Sources](https://github.com/aclrys/Prebid.js/tree/master/modules)
 + [Module Rules](/dev-docs/module-rules.html)

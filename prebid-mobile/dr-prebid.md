@@ -29,8 +29,8 @@ This app is available for iOS and Android:
 
 Dr. Prebid is an open source app. You can find the source on the Prebid GitHub site:
 
-- [Source for iOS](https://github.com/prebid/prebid-mobile-ios/tree/master/tools/PrebidValidator)
-- [Source for Android](https://github.com/prebid/prebid-mobile-android/tree/master/tools/drprebid)
+- [Source for iOS](https://github.com/aclrys/prebid-mobile-ios/tree/master/tools/PrebidValidator)
+- [Source for Android](https://github.com/aclrys/prebid-mobile-android/tree/master/tools/drprebid)
 
 **Review the [Prebid.org Dr. Prebid Terms of Use]({{site.github.url}}/prebid-mobile/dr-prebid-tou.html).**
 

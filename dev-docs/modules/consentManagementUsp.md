@@ -130,7 +130,7 @@ Example 3: Static CMP using custom data passing.
 
 ## Build the Package
 
-Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/prebid/Prebid.js/blob/master/README.md). To include the consent management module, an additional option must be added to the the **gulp build** command:
+Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/aclrys/Prebid.js/blob/master/README.md). To include the consent management module, an additional option must be added to the the **gulp build** command:
 
 {% highlight bash %}
 gulp build --modules=consentManagementUsp,bidAdapter1,bidAdapter2
@@ -138,7 +138,7 @@ gulp build --modules=consentManagementUsp,bidAdapter1,bidAdapter2
 
 ## Adapter Integration
 
-If you are submitting changes to an adapter to support this approach, please also submit a PR to the [docs repo](https://github.com/prebid/prebid.github.io) to add the `usp_supported: true` variable to your respective page in the [bidders directory](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders).  **This will ensure that your adapter's name will automatically appear on the list of adapters supporting US Privacy.**
+If you are submitting changes to an adapter to support this approach, please also submit a PR to the [docs repo](https://github.com/aclrys/prebid.github.io) to add the `usp_supported: true` variable to your respective page in the [bidders directory](https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/bidders).  **This will ensure that your adapter's name will automatically appear on the list of adapters supporting US Privacy.**
 
 ### Bidder Adapter US Privacy Integration
 

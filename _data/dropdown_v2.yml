@@ -321,7 +321,7 @@
     sectionId: 3
     sectionName: Download
     title: iOS
-    link:  https://github.com/prebid/prebid-mobile-ios
+    link:  https://github.com/aclrys/prebid-mobile-ios
     needsDivider: 0
     isHeader: 0
     isSubSectionStart: 0
@@ -330,7 +330,7 @@
     sectionId: 3
     sectionName: Download
     title: Android
-    link:  https://github.com/prebid/prebid-mobile-android
+    link:  https://github.com/aclrys/prebid-mobile-android
     needsDivider: 0
     isHeader: 0
     isSubSectionStart: 0

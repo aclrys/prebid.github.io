@@ -221,7 +221,7 @@ The GDPR Enforcement module requires the GVL ID for a module to be specified. If
 
 ## Build the Package
 
-Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/prebid/Prebid.js/blob/master/README.md). Include the base consent management module and this enforcement module as additional options on the **gulp build** command:
+Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/aclrys/Prebid.js/blob/master/README.md). Include the base consent management module and this enforcement module as additional options on the **gulp build** command:
 
 {% highlight bash %}
 gulp build --modules=consentManagement,gdprEnforcement,bidAdapter1,bidAdapter2

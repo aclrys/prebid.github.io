@@ -37,7 +37,7 @@ Video ad server adapter, use the following command:
 gulp build --modules=dfpAdServerVideo,appnexusBidAdapter
 ```
 
-For more information about how to build with modules, see the [Prebid.js project README](https://github.com/prebid/Prebid.js/blob/master/README.md#build-optimization).
+For more information about how to build with modules, see the [Prebid.js project README](https://github.com/aclrys/Prebid.js/blob/master/README.md#build-optimization).
 
 Finally, your ad ops team needs to have set up line items in Google Ad Manager
 following the instructions at

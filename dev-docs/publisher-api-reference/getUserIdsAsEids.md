@@ -8,7 +8,7 @@ description:
 {: .alert.alert-info :}
 To use this function, include the [UserId module](/dev-docs/modules/userId.html) in your Prebid.js build.
 
-If you need to export the user IDs stored by Prebid User ID module in ORTB Eids frormat, then the `getUserIdsAsEids()` function will return an array formatted as per [ORTB Eids](https://github.com/prebid/Prebid.js/blob/master/modules/userId/eids.md).
+If you need to export the user IDs stored by Prebid User ID module in ORTB Eids frormat, then the `getUserIdsAsEids()` function will return an array formatted as per [ORTB Eids](https://github.com/aclrys/Prebid.js/blob/master/modules/userId/eids.md).
 
 ```
 pbjs.getUserIdsAsEids() // returns userIds in ORTB Eids format. e.g.

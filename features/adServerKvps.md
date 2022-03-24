@@ -87,7 +87,7 @@ The Prebid.js code is in the ad server creative, which decides the overall winne
 ### No Ad Server
 
 Finally, a publisher may want a particular ad unit to be programmatic-only, which Prebid.js can support.
-Please see the [No Ad Server Example](https://github.com/prebid/Prebid.js/blob/master/integrationExamples/noadserver/basic_noadserver.html).
+Please see the [No Ad Server Example](https://github.com/aclrys/Prebid.js/blob/master/integrationExamples/noadserver/basic_noadserver.html).
 
 ## Obtaining Auction Results
 

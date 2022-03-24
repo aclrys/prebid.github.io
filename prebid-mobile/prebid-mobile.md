@@ -38,7 +38,7 @@ Some of the benefits to using the Prebid Mobile header bidding solution include:
 
 -   Prebid Mobile SDK
 
-    Mobile app developers implement header bidding through the Prebid Mobile SDK integration. SDKs are available for [iOS](https://github.com/prebid/prebid-mobile-ios) and [Android](https://github.com/prebid/prebid-mobile-android).
+    Mobile app developers implement header bidding through the Prebid Mobile SDK integration. SDKs are available for [iOS](https://github.com/aclrys/prebid-mobile-ios) and [Android](https://github.com/aclrys/prebid-mobile-android).
 
 ## How It Works
 

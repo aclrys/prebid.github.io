@@ -252,7 +252,7 @@ II. A tablet with viewport size: `[1100px, 980px]`
 
 ## Building the Package With Advanced Size Mapping Support
 
-Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/prebid/Prebid.js/blob/master/README.md). To include the Advanced Size Mapping module, the `sizeMappingV2` module must be added to the **gulp build** command:
+Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/aclrys/Prebid.js/blob/master/README.md). To include the Advanced Size Mapping module, the `sizeMappingV2` module must be added to the **gulp build** command:
 
 {% highlight bash %}
 gulp build --modules=sizeMappingV2,bidAdapter1,bidAdapter2

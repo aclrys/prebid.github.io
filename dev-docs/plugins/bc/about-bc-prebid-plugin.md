@@ -94,13 +94,13 @@ You can think of the “plugin” as being a combination of the loader and the p
 #### Minified Version
 
 - Default location:  `https://acdn.adnxs.com/video/plugins/bc/prebid/bc_prebid_vast.min.js`
-- Repository location:  `https://github.com/prebid/prebid-js-plugin-brightcove.git`
+- Repository location:  `https://github.com/aclrys/prebid-js-plugin-brightcove.git`
    - after building: `./prebid-js-plugin-brightcove/dist/bc_prebid_vast.min.js`
 
 #### Non-Minified Version
 
 - Default location:  `https://acdn.adnxs.com/video/plugins/bc/prebid/bc_prebid_vast.js`
-- Repository location:  `https://github.com/prebid/prebid-js-plugin-brightcove.git`
+- Repository location:  `https://github.com/aclrys/prebid-js-plugin-brightcove.git`
    - after building: `./prebid-js-plugin-brightcove/dist/bc_prebid_vast.js`
 
 ### bc_prebid_vast_plugin
@@ -110,13 +110,13 @@ You can think of the “plugin” as being a combination of the loader and the p
 #### Minified Version
 
 - Default location: `https://acdn.adnxs.com/video/plugins/bc/prebid/bc_prebid_vast_plugin.min.js`
-- Repository location:  `https://github.com/prebid/prebid-js-plugin-brightcove.git`
+- Repository location:  `https://github.com/aclrys/prebid-js-plugin-brightcove.git`
     - after building: `./prebid-js-plugin-brightcove/dist/bc_prebid_vast_plugin.min.js`
 
 #### Non-Minified Version
 
 - Default location: `https://acdn.adnxs.com/video/plugins/bc/prebid/bc_prebid_vast_plugin.js`
-- Repository location:  `https://github.com/prebid/prebid-js-plugin-brightcove.git`
+- Repository location:  `https://github.com/aclrys/prebid-js-plugin-brightcove.git`
     - after building: `./prebid-js-plugin-brightcove/dist/bc_prebid_vast_plugin.js`
 
 ### MailOnline Plugin
@@ -134,14 +134,14 @@ This plugin includes modifications that can be found in the MailOnline repositor
 #### Minified Version
 
 - Default location: `https://acdn.adnxs.com/video/plugins/mol/videojs_5.vast.vpaid.min.js`
-- Repository location:  `https://github.com/prebid/videojs-mailonline-plugin.git`
+- Repository location:  `https://github.com/aclrys/videojs-mailonline-plugin.git`
    - after building: `./videojs-mailonline-plugin/dist/videojs_5.vast.vpaid.min.js`
 
 #### Non-Minified Version
 
 - Default location:  `https://acdn.adnxs.com/video/plugins/mol/videojs_5.vast.vpaid.js`
 - Debuggable Non-Minified Version:  `https://acdn.adnxs.com/video/plugins/mol/debug/videojs_5.vast.vpaid.js`
-- Repository location:  `https://github.com/prebid/videojs-mailonline-plugin.git`
+- Repository location:  `https://github.com/aclrys/videojs-mailonline-plugin.git`
    - after building: `./videojs-mailonline-plugin/dist/videojs_5.vast.vpaid.js`
 
 ### Brightcove IMA Plugin

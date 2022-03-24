@@ -9,10 +9,10 @@ title: Prebid Server | Developers | Adding a Module
 {: .no_toc}
 
 This document guides you through the process of developing a module for host companies to plug into their instance of Prebid Server.
-We encourage you to look at existing modules for working examples. You can also ask us questions by [submitting a GitHub issue](https://github.com/prebid/prebid-server/issues/new).
+We encourage you to look at existing modules for working examples. You can also ask us questions by [submitting a GitHub issue](https://github.com/aclrys/prebid-server/issues/new).
 
 {: .alert.alert-info :}
-Modules are currently only supported in [PBS-Java](https://github.com/prebid/prebid-server-java).
+Modules are currently only supported in [PBS-Java](https://github.com/aclrys/prebid-server-java).
 
 
 * TOC
@@ -27,14 +27,14 @@ Prebid Server (Java) supports a rich module interface that
 allows anyone to contribute functionality at predefined places
 along the request pipeline. Here's the general development process:
 
-1. The module writer designs the feature, then optionally posts it as an [issue](https://github.com/prebid/prebid-server/issues) for community feedback.
+1. The module writer designs the feature, then optionally posts it as an [issue](https://github.com/aclrys/prebid-server/issues) for community feedback.
 1. They then code the module and unit tests and write user documentation.
 1. Code, tests, and documentation are submitted to the Prebid Server team for review.
 1. Once accepted, Prebid Server Host companies may choose to activate the new module for their publishers.
 1. Publishers can utilize the feature, doing any required account setup described in the module documentation.
 
 The first module written was the ORTB2 Blocking module. Example ideas for future modules include creative validation and traffic quality.
-If you have an idea for a module that's not feasible (e.g. a new endpoint), open [an issue](https://github.com/prebid/prebid-server/issues) with a detailed description of what you're looking to do.
+If you have an idea for a module that's not feasible (e.g. a new endpoint), open [an issue](https://github.com/aclrys/prebid-server/issues) with a detailed description of what you're looking to do.
 
 ### Terminology
 
@@ -171,7 +171,7 @@ Other rules for open source PBS pull request:
 
 ### 9. Write the Module Documentation
 
-Fork the [documentation repo](https://github.com/prebid/prebid.github.io) and
+Fork the [documentation repo](https://github.com/aclrys/prebid.github.io) and
 create a file in /prebid-server/pbs-modules. You can start by copying one of the existing files. It should contain:
 
 - A description of the module functionality: why people might be interested in using it.

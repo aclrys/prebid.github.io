@@ -216,7 +216,7 @@ Example 2: Static CMP using custom data passing.
 
 ## Build the Package
 
-Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/prebid/Prebid.js/blob/master/README.md). To include the consent management module, an additional option must be added to the **gulp build** command:
+Follow the basic build instructions in the GitHub Prebid.js repo's main [README](https://github.com/aclrys/Prebid.js/blob/master/README.md). To include the consent management module, an additional option must be added to the **gulp build** command:
 
 {% highlight bash %}
 gulp build --modules=consentManagement,bidAdapter1,bidAdapter2
@@ -229,7 +229,7 @@ You can also use the [Prebid.js Download](/download.html) page.
 {: .alert.alert-info :}
 Prebid.js adapters don't need to change to support TCF v2.0 if they already support TCF 1.1 -- the consent string is passed through the same bidrequest location. The bidder's endpoint, however, will need to change to support TCF v2.0. Once the endpoint supports TCF2, you can update the documentation.md file as described below above the table showing the list of TCF2-compliant bidders.
 
-If you are submitting changes to an adapter to support this approach, please also submit a PR to the [docs repo](https://github.com/prebid/prebid.github.io) to add the `gdpr_supported: true` variable to your respective page in the [bidders directory](https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders).  **This will ensure that your adapter's name will automatically appear on the list of adapters supporting GDPR.**
+If you are submitting changes to an adapter to support this approach, please also submit a PR to the [docs repo](https://github.com/aclrys/prebid.github.io) to add the `gdpr_supported: true` variable to your respective page in the [bidders directory](https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/bidders).  **This will ensure that your adapter's name will automatically appear on the list of adapters supporting GDPR.**
 
 ### Bidder Adapter GDPR Integration
 
@@ -423,7 +423,7 @@ This should be be set to true once the parameters listed above are processed.
 
 ## Adapters Supporting GDPR
 
-Bidders on this list have self-declared their GDPR support in their https://github.com/prebid/prebid.github.io/tree/master/dev-docs/bidders md file by adding "gdpr_supported: true".
+Bidders on this list have self-declared their GDPR support in their https://github.com/aclrys/prebid.github.io/tree/master/dev-docs/bidders md file by adding "gdpr_supported: true".
 
 <script src="/assets/js/dynamicTable.js" type="text/javascript"></script>
 

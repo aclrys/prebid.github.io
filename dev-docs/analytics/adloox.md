@@ -31,7 +31,7 @@ info@adloox.com for more information.
 | platformid | required  | Your platform ID | `2`  | integer |
 | tagid | required  | Your tag configuration ID | `1234`  | integer |
 
-For detailed instructions please look to the [integration guidelines shipped with the Prebid.js project](https://github.com/prebid/Prebid.js/blob/master/modules/adlooxAnalyticsAdapter.md) which also link to our Prebid video and real-time data provider options.
+For detailed instructions please look to the [integration guidelines shipped with the Prebid.js project](https://github.com/aclrys/Prebid.js/blob/master/modules/adlooxAnalyticsAdapter.md) which also link to our Prebid video and real-time data provider options.
 
 ### Example Configuration
 

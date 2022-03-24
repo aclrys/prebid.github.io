@@ -63,7 +63,7 @@ consider:
 - **GDPR enforcement flags** - for each Purpose
 - **Host Cookie TTL** - The default expiration time of the `uids` cookie set in the host company domain should be defined to match what's in the TCF 2.1 `maxCookieAgeSeconds` GVL field. (This is the host-cookie.ttl-days setting in both Go and Java.)
 
-The specific details vary between [PBS-Go](https://github.com/prebid/prebid-server/blob/master/config/config.go) and [PBS-Java](https://github.com/prebid/prebid-server-java/blob/master/docs/config-app.md), so check the
+The specific details vary between [PBS-Go](https://github.com/aclrys/prebid-server/blob/master/config/config.go) and [PBS-Java](https://github.com/aclrys/prebid-server-java/blob/master/docs/config-app.md), so check the
 version-specific documentation for more information.
 
 ## COPPA

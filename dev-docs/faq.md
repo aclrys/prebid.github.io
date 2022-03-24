@@ -123,7 +123,7 @@ In other words, you shouldn't have to do anything other than make sure your own 
 
 ## How often is Prebid.js updated?
 
-See [the GitHub release schedule](https://github.com/prebid/Prebid.js/blob/master/RELEASE_SCHEDULE.md) for more details.
+See [the GitHub release schedule](https://github.com/aclrys/Prebid.js/blob/master/RELEASE_SCHEDULE.md) for more details.
 
 ## When do I have to upgrade my version of Prebid.js?
 
@@ -158,7 +158,7 @@ It's technically possible, but we don't recommend doing this:
 - We don't test concurrent versions
 - We won't specifically support debugging problems caused by running two concurrent versions. But will take take PRs if someone finds an issue.
 
-If all this wasn't enough to warn you away from trying, it should work if you name the PBJS global differently for each instance (https://github.com/prebid/Prebid.js/blob/master/package.json#L20)
+If all this wasn't enough to warn you away from trying, it should work if you name the PBJS global differently for each instance (https://github.com/aclrys/Prebid.js/blob/master/package.json#L20)
 
 ## Can I filter bid responses that don't meet my criteria?
 
@@ -177,4 +177,4 @@ This differs from how OpenRTB defines this value as being the clearing price in 
 
 + [Prebid.js Troubleshooting Guide](/troubleshooting/troubleshooting-guide.html)
 + [Prebid.js Common Issues](/dev-docs/common-issues.html)
-+ [Prebid.js issues tagged 'question'](https://github.com/prebid/Prebid.js/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Aquestion%20)
++ [Prebid.js issues tagged 'question'](https://github.com/aclrys/Prebid.js/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Aquestion%20)

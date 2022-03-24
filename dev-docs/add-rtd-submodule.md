@@ -50,11 +50,11 @@ When you create a Real-Time Data sub-module, you will be operating under the umb
 
 Working with any Prebid project requires using Github. In general, we recommend the same basic workflow for any project:
 
-1. Fork the appropriate Prebid repository (e.g. [Prebid.js](https://github.com/prebid/Prebid.js)).
+1. Fork the appropriate Prebid repository (e.g. [Prebid.js](https://github.com/aclrys/Prebid.js)).
 2. Create a branch in your fork for your proposed code change. (e.g. feature/exRtdSProvider)
 3. Build and test your feature/bug fix in the branch.
 4. Open a [pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) to the appropriate repository's master branch with a good description of the feature/bug fix.
-5. If there's something that needs to change on the prebid.org website, follow the above steps for the [website repo](https://github.com/prebid/prebid.github.io).
+5. If there's something that needs to change on the prebid.org website, follow the above steps for the [website repo](https://github.com/aclrys/prebid.github.io).
 
 {: .alert.alert-warning :}
 RTD sub-modules are subject to a number of specific technical rules. Please become familiar
@@ -274,11 +274,11 @@ beforeInit();
 
 ### Step 4: Submit the code
 
-Once everything looks good, submit the code, tests, and markdown as a pull request to the [Prebid.js repo](https://github.com/prebid/Prebid.js).
+Once everything looks good, submit the code, tests, and markdown as a pull request to the [Prebid.js repo](https://github.com/aclrys/Prebid.js).
 
 ### Step 5: Website pull request
 
-1. Create a fork of the [website repo](https://github.com/prebid/prebid.github.io) and a branch for your new adapter. (e.g. feature/exRtdProvider)
+1. Create a fork of the [website repo](https://github.com/aclrys/prebid.github.io) and a branch for your new adapter. (e.g. feature/exRtdProvider)
 
 2. Create a new file for your RTD sub-module in dev-docs/modules/ExampleRtdProvider.md. Take a look at the other *RtdProvider.md files in that directory for the important header values. Specifically it requires the following:
 

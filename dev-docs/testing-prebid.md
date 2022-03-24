@@ -1,5 +1,5 @@
 ---
-redirect_to: https://github.com/prebid/Prebid.js/blob/master/CONTRIBUTING.md
+redirect_to: https://github.com/aclrys/Prebid.js/blob/master/CONTRIBUTING.md
 layout: page_v2
 title: Testing Prebid.js
 description: How to write tests for the Prebid.js library
@@ -16,7 +16,7 @@ top_nav_section: dev_docs
 
 Starting on 21 June 2016, all pull requests to the Prebid.js library will need to include tests with greater than 80% code coverage for any changed/added code before they can be merged into master.
 
-For more information, see Prebid.js issue [#421](https://github.com/prebid/Prebid.js/issues/421).
+For more information, see Prebid.js issue [#421](https://github.com/aclrys/Prebid.js/issues/421).
 
 This page describes how to test code in the Prebid.js repository to help prepare your pull request.
 

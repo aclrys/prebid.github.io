@@ -52,7 +52,7 @@ public enum LogLevel: String {
 }
 ```
 
-Default value is `debug`. All logging will be disabled in the release build. For furthe information, refer to [PR#217](https://github.com/prebid/prebid-mobile-ios/pull/217)
+Default value is `debug`. All logging will be disabled in the release build. For furthe information, refer to [PR#217](https://github.com/aclrys/prebid-mobile-ios/pull/217)
 
 ```
 var logLevel: LogLevel { get set }
@@ -63,7 +63,7 @@ var logLevel: LogLevel { get set }
 var timeoutMillis: Int
 ```
 
-`storedAuctionResponse`: Set as type string, stored auction responses signal Prebid Server to respond with a static response matching the storedAuctionResponse found in the Prebid Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/prebid/prebid-mobile-android/issues/133).
+`storedAuctionResponse`: Set as type string, stored auction responses signal Prebid Server to respond with a static response matching the storedAuctionResponse found in the Prebid Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/aclrys/prebid-mobile-android/issues/133).
 
 ```swift
 var storedAuctionResponse: String
@@ -78,7 +78,7 @@ var storedAuctionResponse: String
 * `bidder`: Bidder name as defined by Prebid Server bid adapter of type string.
 * `responseId`: Configuration ID used in the Prebid Server Database to store static bid responses.
 
-Stored Bid Responses are similar to Stored Auction Responses in that they signal to Prebid Server to respond with a static pre-defined response, except Stored Bid Responses is done at the bidder level, with bid requests sent out for any bidders not specified in the bidder parameter. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/prebid/prebid-mobile-android/issues/133).
+Stored Bid Responses are similar to Stored Auction Responses in that they signal to Prebid Server to respond with a static pre-defined response, except Stored Bid Responses is done at the bidder level, with bid requests sent out for any bidders not specified in the bidder parameter. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/aclrys/prebid-mobile-android/issues/133).
 
 ```swift
 func addStoredBidResponse(bidder: String, responseId: String)

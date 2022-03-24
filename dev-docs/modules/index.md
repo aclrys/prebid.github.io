@@ -90,7 +90,7 @@ These modules may require accounts with a service provider.
 
 ## Further Reading
 
-+ [Source code of all modules](https://github.com/prebid/Prebid.js/tree/master/modules)
++ [Source code of all modules](https://github.com/aclrys/Prebid.js/tree/master/modules)
 + [How to add a Bid Adapter](/dev-docs/bidder-adaptor.html)
 + [How to add an Analytics Adapter](/dev-docs/integrate-with-the-prebid-analytics-api.html)
 + [How to add a Real Time Data Submodule](/dev-docs/add-rtd-submodule.html)

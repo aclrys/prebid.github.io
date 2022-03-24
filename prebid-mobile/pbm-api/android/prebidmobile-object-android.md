@@ -177,7 +177,7 @@ PrebidMobile.setApplicationContext(getApplicationContext());
 ### Set Auction Response
 
 **Parameters**
-`storedAuctionResponse`: Set as type string, stored auction responses signal Prebid Server to respond with a static response matching the storedAuctionResponse found in the Prebid Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/prebid/prebid-mobile-android/issues/133).
+`storedAuctionResponse`: Set as type string, stored auction responses signal Prebid Server to respond with a static response matching the storedAuctionResponse found in the Prebid Server Database, useful for debugging and integration testing. No bid requests will be sent to any bidders when a matching storedAuctionResponse is found. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/aclrys/prebid-mobile-android/issues/133).
 
 ```java
 void setStoredAuctionResponse(@NonNull String storedAuctionResponse)
@@ -200,7 +200,7 @@ PrebidMobile.setStoredAuctionResponse("111122223333");
 ```
 
 ### addStoredBidResponses
-Stored Bid Responses are similar to Stored Auction Responses in that they signal to Prebid Server to respond with a static pre-defined response, except Stored Bid Responses is done at the bidder level, with bid requests sent out for any bidders not specified in the bidder parameter. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/prebid/prebid-mobile-android/issues/133).
+Stored Bid Responses are similar to Stored Auction Responses in that they signal to Prebid Server to respond with a static pre-defined response, except Stored Bid Responses is done at the bidder level, with bid requests sent out for any bidders not specified in the bidder parameter. For more information on how stored auction responses work, refer to the written [description on github issue 133](https://github.com/aclrys/prebid-mobile-android/issues/133).
 
 **Parameters**
 `bidder`: Bidder name as defined by Prebid Server bid adapter of type string.

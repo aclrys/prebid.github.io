@@ -18,8 +18,8 @@ Download and prepare Prebid Server:
 
 ```bash
 cd YOUR_DIRECTORY
-git clone https://github.com/prebid/prebid-server src/github.com/prebid/prebid-server
-cd src/github.com/prebid/prebid-server
+git clone https://github.com/aclrys/prebid-server src/github.com/aclrys/prebid-server
+cd src/github.com/aclrys/prebid-server
 ```
 
 Run the automated tests:
@@ -61,6 +61,6 @@ The server can be reached at `http://localhost:8000`.
 
 Want to [add a bidding adapter](/prebid-server/developers/add-new-bidder-go.html)?
 
-Report bugs, request features, and suggest improvements [on Github](https://github.com/prebid/prebid-server/issues).
+Report bugs, request features, and suggest improvements [on Github](https://github.com/aclrys/prebid-server/issues).
 
-Or better yet, [open a pull request](https://github.com/prebid/prebid-server/compare) with the changes you'd like to see.
+Or better yet, [open a pull request](https://github.com/aclrys/prebid-server/compare) with the changes you'd like to see.

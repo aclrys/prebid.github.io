@@ -408,4 +408,4 @@ Here is a sample Prebid configuration JSON object returned via URL:
 - [About the Cross Player Prebid Component]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/about-cross-player-prebid-component.html)
 - [Cross Player Prebid Component API]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/cross-player-api.html)
 - [Communication Between Prebid Component and Player]({{site.baseurl}}/dev-docs/plugins/cross-player-prebid-component/cross-player-communication.html)
-- [Download Cross-Player Prebid Component](https://github.com/prebid/cross-player-prebid-component)
+- [Download Cross-Player Prebid Component](https://github.com/aclrys/cross-player-prebid-component)

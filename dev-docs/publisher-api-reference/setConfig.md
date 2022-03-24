@@ -1249,7 +1249,7 @@ pbjs.setConfig({
 {% endhighlight %}
 
 {: .alert.alert-warning :}
-The endpoint URL provided must be a Prebid Cache or be otherwise compatible with the [Prebid Cache interface](https://github.com/prebid/prebid-cache).
+The endpoint URL provided must be a Prebid Cache or be otherwise compatible with the [Prebid Cache interface](https://github.com/aclrys/prebid-cache).
 
 As of Prebid.js 4.28, you can specify the `ignoreBidderCacheKey` option:
 

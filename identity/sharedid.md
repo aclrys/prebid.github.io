@@ -172,8 +172,8 @@ For those not using Prebid's header bidding solution, SharedId can deployed via 
 ### SharedId Script
 
 For those interested in implementing SharedId without prebid.js. 
-1. Clone the [SharedId script repository](https://github.com/prebid/Shared-id-v2)
-2. Implement the pubcid.js script on the desired page by following the build instructions in the [readme.md](https://github.com/prebid/Shared-id-v2#readme)
+1. Clone the [SharedId script repository](https://github.com/aclrys/Shared-id-v2)
+2. Implement the pubcid.js script on the desired page by following the build instructions in the [readme.md](https://github.com/aclrys/Shared-id-v2#readme)
 
 Prebid also recommends implementing a method where users can easily opt-out of targeted advertising. Please refer to the User Opt-Out section located at the bottom of this page.
 
@@ -237,8 +237,8 @@ Add server-side support for SharedId to better handle the ever-increasing restri
 
 PubCID/SharedId plugins are available for Wordpress and Drupal. Because the CMS can cache pages to improve scalability, it's impractical to set unique cookies during page generation. Instead these plugins require a dynamic endpoint that serves back a blank pixel along with a unique cookie value. The client side script  needs one additional parameter for this URL. Please consult the corresponding plugin documents for default values:
 
-1. Wordpress : Install directly from the [Wordpress admin page](https://wordpress.org/plugins/publisher-common-id/). Install from [GITHUB](https://github.com/prebid/sharedid-wordpress) 
-2. Drupal : Install from [Github](https://github.com/prebid/sharedid-drupal).
+1. Wordpress : Install directly from the [Wordpress admin page](https://wordpress.org/plugins/publisher-common-id/). Install from [GITHUB](https://github.com/aclrys/sharedid-wordpress) 
+2. Drupal : Install from [Github](https://github.com/aclrys/sharedid-drupal).
 
 #### Endpoint Implementations
 

@@ -32,8 +32,8 @@ We recommend you review the [feature comparison list](/prebid-server/features/pb
 
 ## Code Repositories
 
-- [Prebid Server - Go](https://github.com/prebid/prebid-server)
-- [Prebid Cache Server - Go](https://github.com/prebid/prebid-cache)
+- [Prebid Server - Go](https://github.com/aclrys/prebid-server)
+- [Prebid Cache Server - Go](https://github.com/aclrys/prebid-cache)
 
 ## Installation
 

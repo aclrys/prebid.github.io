@@ -27,9 +27,9 @@ There are serveral Prebid.org members that will install & maintain Prebid on a p
 
 ## GitHub
 
-Sometimes people have already gotten answers on the GitHub forums. See [issues with the 'question' tag on the Prebid.js repo](https://github.com/prebid/Prebid.js/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Aquestion%20)
+Sometimes people have already gotten answers on the GitHub forums. See [issues with the 'question' tag on the Prebid.js repo](https://github.com/aclrys/Prebid.js/issues?utf8=%E2%9C%93&q=is%3Aissue%20label%3Aquestion%20)
 
-Submit a GitHub issue for [Prebid.js](https://github.com/prebid/Prebid.js/issues), [Prebid SDK iOS](https://github.com/prebid/prebid-mobile-ios/issues), [Prebid Mobile Android](https://github.com/prebid/prebid-mobile-android/issues) or [Prebid Server](https://github.com/prebid/prebid-server/issues) if:
+Submit a GitHub issue for [Prebid.js](https://github.com/aclrys/Prebid.js/issues), [Prebid SDK iOS](https://github.com/aclrys/prebid-mobile-ios/issues), [Prebid Mobile Android](https://github.com/aclrys/prebid-mobile-android/issues) or [Prebid Server](https://github.com/aclrys/prebid-server/issues) if:
 
 - You have a feature request to the code base.
 - You have found a bug in the code.
